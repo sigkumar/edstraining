@@ -255,3 +255,9 @@ main .section.highlight {
   margin: 0;
   padding: 40px 0;
 }
+.section.highlightinfo{
+   background-color: goldenrod;
+}
+html[dir='rtl'] .cards > ul > li {
+  color: green;
+}
