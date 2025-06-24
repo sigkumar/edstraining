@@ -80,7 +80,7 @@ async function loadEager(doc) {
   document.documentElement.lang = 'en';
   decorateTemplateAndTheme();
   const main = doc.querySelector('main');
-   const path = getHref();
+  const path = getHref();
   if (path.includes('/ar/')) {
     document.documentElement.lang = 'ar';
     document.documentElement.dir = 'rtl';
