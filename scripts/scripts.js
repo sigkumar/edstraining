@@ -84,14 +84,15 @@ export function decorateMain(main) {
   decorateBlocks(main);
 }
 
+
 export function getHref() {
   if (window.location.href !== 'about:srcdoc') return window.location.href;
+
 
   const { location: parentLocation } = window.parent;
   const urlParams = new URLSearchParams(parentLocation.search);
   return `${parentLocation.origin}${urlParams.get('path')}`;
 }
-
 export async function loadFragment(path) {
   if (path && path.startsWith('/')) {
     const resp = await fetch(path);
@@ -213,5 +214,5 @@ async function loadPage() {
   await loadLazy(document);
   loadDelayed();
 }
-
+ 
 loadPage();
