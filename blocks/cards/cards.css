@@ -25,3 +25,16 @@
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
+.cards {
+  .cards-card-body {
+    p {
+      font-family: 'Arial', sans-serif;
+      font-size: 18px;
+    }
+    
+    p > strong {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 22px;
+    }
+  }
+}
